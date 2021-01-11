@@ -3,27 +3,27 @@ local text = msg.content_.text_
 if ChatType == 'sp' or ChatType == 'gp'  then
 if not DevAbs:get(DevProx..'Abs:Lock:Reply'..msg.chat_id_) then
 if text == "انجب" or text == "نجب" or text == "انجبي" or text == "نجبي" or text == "انجبو" or text == "نجبو" then
-if SudoId(msg.sender_user_id_) then
+if SudoId(msg) then
 rd = 'مطوريي اغلط شكد متريد نورتنه ، ♥️💪🏿'
-elseif SudoBot(msg.sender_user_id_) then
+elseif SudoBot(msg) then
 rd = 'احترم نفسكك لا عبالكك رافعيك مطور ، 🖕🏿♥️'
-elseif ManagerAll(msg.sender_user_id_) then
+elseif ManagerAll(msg) then
 rd = 'حبيبي راح اسامحكك لان مدير وع راسي ، 🖐🏿♥️'
-elseif AdminAll(msg.sender_user_id_) then
+elseif AdminAll(msg) then
 rd = 'راح اسامحكك هلمره لانك ادمن ، ☝🏿♥️'
-elseif VipAll(msg.sender_user_id_) then
+elseif VipAll(msg) then
 rd = 'راح احترمكك تره بس هلمره لانك مميز عندي ، ☝🏿♥️'
-elseif AbsConstructor(msg.sender_user_id_, msg.chat_id_) then
+elseif AbsConstructor(msg) then
 rd = 'تاج راسيي غير انت منشئ المجموعه ،🖐🏿♥️'
-elseif Constructor(msg.sender_user_id_, msg.chat_id_) then
+elseif Constructor(msg) then
 rd = 'تاج راسيي انت المنشئ الاساسي ،🖐🏿♥️'
-elseif BasicConstructor(msg.sender_user_id_, msg.chat_id_) then
+elseif BasicConstructor(msg) then
 rd = 'حبيبي المنشئ استقبلها منكك ،👍🏿♥️'
-elseif Manager(msg.sender_user_id_, msg.chat_id_) then
+elseif Manager(msg) then
 rd = 'حبيبي راح اسامحكك لان مدير وع راسي ، 🖐🏿♥️'
-elseif Admin(msg.sender_user_id_, msg.chat_id_) then
+elseif Admin(msg) then
 rd = 'راح اسامحكك هلمره لانك ادمن ، ☝🏿♥️'
-elseif VipMem(msg.sender_user_id_, msg.chat_id_) then
+elseif VipMem(msg) then
 rd = 'راح احترمكك تره بس هلمره لانك مميز عندي ، ☝🏿♥️'
 else
 rd = 'لكك هوه انت عضو وجاي تغلط ؟، 🖕🏿♥️'
@@ -92,7 +92,7 @@ DevProxTEAM =  "ڪوولُِ مآڪوولُِ لُِآحٍدِ 𖠙 😉♥️"
 Dev_Abs(msg.chat_id_, msg.id_, 1, DevProxTEAM, 1, 'md')
 return false
 end
-if text == 'فرخ' then
+if text == 'فرخ' or text == 'فرخه' then
 DevProxTEAM =  "ٰوينۨہهۂَ خۡل احۡصرهۂَ 𖠙 😹♥️" 
 Dev_Abs(msg.chat_id_, msg.id_, 1, DevProxTEAM, 1, 'md') 
 return false
